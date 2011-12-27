@@ -1,0 +1,90 @@
+@import url('sunburst.css');
+
+body {padding: 40px 0 40px 0; font-family: adobe-text-pro,sans-serif;}
+h1 {font-size: 52px; line-height: 2em; font-weight: normal;}
+h1, h2, h3, h4, h5 {font-weight: normal;}
+h2 {font-size: 32px; padding-top: 40px; font-weight: normal;}
+h3 {font-size: 22px; padding-top: 10px;}
+p {margin-bottom: 30px;}
+p, blockquote p, li {font-size: 16px; line-height: 1.9em; color: #404040;}
+	p img {float: left; margin: 10px 20px 5px 0;}
+.window code {background-color: transparent;}
+	.window pre code {background-color: transparent;}
+.small p, ul.small li {font-size: 12px;}
+.right {text-align: right;}
+canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 4px 4px;}
+	canvas.bar:hover {background-color: #0069D6;}
+figure {margin: 10px 0 20px 0;}
+	figcaption {text-align: center; margin-top: 10px;}
+	.boxmodel div {position: relative; padding: 10px 25px 25px 25px; margin: 10px;}
+		.boxmodel div:hover {border: 1px solid #a9a9a9;}
+			.boxmodel div:hover span {}
+		div.margin {border: 1px dashed #ccc; margin: 0;}
+		.border {border: 1px solid #ccc; background-color: #eee;}
+		.padding {border: 1px solid #ccc; background-color: #ddd;}
+		div.width_height {padding: 20px; border: 1px solid #a9a9a9; background-color: #ccc; text-align: center;}
+		.boxmodel span {color: #a9a9a9;}
+			.boxmodel span b {color: #404040;}
+		span.top {position: absolute; top: 10px; left: 50%;}
+		span.right {position: absolute; top: 50%; right: 5px;}
+			span.right b {padding-right: 5px;}
+		span.bottom {position: absolute; bottom: 10px; left: 50%;}
+		span.left {position: absolute; left: 5px; top: 50%;}
+			span.left b {padding-left: 5px;}
+	
+.noheader {padding-top: 16px;}
+.result {padding: 10px 20px 20px 20px; margin: 10px 0 20px 0; border: 1px solid #ddd; border-radius: 4px 4px 4px 4px;}
+	.result h1 {margin: 0; font-size: 23px;}
+	.result h2 {padding-top: 0; font-size: 18px;}
+	.result ul, result ol {padding-left: 20px;}
+	.result p, .result li {font-size: 13px; list-style-position: inside;}
+		.result p {margin-bottom: 0;}
+			.result p a {text-decoration: underline;}
+	.result img {margin-top: 10px;}
+	.no-block h1, .no-block h2, .no-block ul, .no-block li, .no-block p {display: inline;}  
+.window {position: relative; margin: 10px 0 20px 0; box-shadow:0 1px 4px rgba(0,0,0,.25); border-radius:4px;}
+.window p {
+    border:1px #a8a8a8 solid;
+    border-top:1px #b0b0b0 solid;
+    background-color: #444444;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#E5E5E5), to(#AEAEAE));
+    background-image:-webkit-linear-gradient(top, #E5E5E5, #AEAEAE);
+    background-image:-moz-linear-gradient(top, #E5E5E5, #AEAEAE);
+    background-image:-ms-linear-gradient(top, #E5E5E5, #AEAEAE);
+    background-image:-o-linear-gradient(top, #E5E5E5, #AEAEAE);
+    background-image:linear-gradient(top, #E5E5E5, #AEAEAE);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#E5E5E5', EndColorStr='#AEAEAE');
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow:inset 0 1px 0 #f2f2f2;    
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size:12px;
+    margin:0;
+    padding:0;
+    display:block;
+    text-align:center;
+    color:#464646;
+    text-shadow:0 1px 0 rgba(255,255,255,.75);
+}
+.window pre {
+    background:#1a1a1a;
+    display:block;
+    margin:0;
+    padding: 0 15px 0 15px;
+    color:#E8E8E7;
+	border-radius: 0 0 0 0;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size:12px;
+    font-family:droid-sans-mono, monospace;
+    text-shadow:0 1px 0 #000;
+   /* overflow-x:scroll; */
+}

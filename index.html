@@ -1,0 +1,918 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Lär dig ta fram webbplatser på rätt sätt, vi hjälper dig i 30 pragmatiska steg</title>
+	<meta name="description" content="">
+	<meta name="author" content="Robert Lidberg">
+
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="global.css">
+	<script src="js/highlight.pack.js"></script>
+	<script>
+	  hljs.tabReplace = '    ';
+	  hljs.initHighlightingOnLoad();
+	  </script>
+	<script src="js/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+	<div class="container">
+		<div class="row">
+			<div class="span16">
+				<header>
+					<h1>Pragmatisk webbdesign, i 30 steg</h1>
+				</header>
+			</div>
+		</div>
+		<div class="row" >
+			<div class="span16">
+				<blockquote>
+					<p>Pragmatisk.se är ett projekt finansierat av Internetstiftelsen. Projektets syfte är att ge ramar till ämnet, och specifikt gymnasiekursen, webbdesign. I 30 steg kommer du följa en process som är konkret och enkelt utformad från start till slut, och successivt under alla steg lär du dig alla de delar som krävs för att ta fram en god webbplats. Innehållet är framtaget och bygger på tre hörnstenar; 1) Gällande standarder 2) Best practice 3) Bransch-praxis.</p>
+					<!--<small>Robert Lidberg, Duva AB</html>-->
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span16">
+				<h2>Inledning</h2>
+				<div class="row">
+					<div class="span8">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="span8">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span16">
+				<h2>Innehållsförteckning</h2>
+				<ol>
+					<li>Förberedelser</li>
+					<li>En webbplats två beståndsdelar</li>
+					<li>Programmeringspråk för innehåll, HTML
+						<ol>
+							<li>Introduktion till HTML</li>
+							<li>Grunden i ett HTML-dokument</li>
+							<li>Ditt första HTML-dokument</li>
+							<li>Ytterligare 3 taggar</li>
+							<li>Vad då href="" ?</li>
+							<li>Att göra en punkt- eller nummerlista i HTML</li>
+							<li>Du känner nu till 7 taggar</li>
+							<li>Avstämning</li>
+							<li>Två typer av taggar, inline och block</li>
+							<li>Lägga in bilder</li>
+							<li>Så fungerar mått</li>
+							<li>Boxmodellen</li>
+							<li>Standardvärden</li>
+							<li>Några exempel för att förstå boxmodellen</li>
+							<li>Sammanfattning av HTML-kapitlet</li>
+						</ol>
+					</li>
+					<li>Programmeringspråk för utseende, CSS</li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span16">
+				<h2>Förberedelser</h2>
+				<div class="row">
+					<div class="noheader span6">
+						<p>Det krävs inga speciella programvaror för att börja bygga en webbplats, ett textredigeringsprogram och en webbläsare räcker gott.</p>
+						<p>Välj den webbläsare och textredigerare som passar dig. Var uppmärksam på om du har en gammal webbläsare som exempelvis Internet Explorer 6 eller 7, byt eller uppgradera då.</p>
+					</div>
+					<div class="span6">
+						<h3>Textredigerare</h3>
+						
+						<h4>För Windows</h4>
+						<ul>
+							<li>Anteckningar som finns med i Windows</li>
+							<li><a href="http://notepad-plus-plus.org/">Notepad++</a>, <a href="http://www.flos-freeware.ch/notepad2.html">Notepad2</a></li>
+						</ul>
+				
+						<h4>För Mac</h4>
+						<ul>
+							<li>Textredigerare som finns med i Mac OS X</li>
+							<li><a href="http://macromates.com/">TextMate</a>, <a href="http://www.peterborgapps.com/smultron/">Smultron</a> eller <a href="http://alternativeto.net/software/coda/">Coda</a></li>
+						</ul>
+				
+						<h4>För *nix</h4>
+						<ul>
+							<li>Första bästa textredigerare</li>
+							<li><a href="http://projects.gnome.org/gedit/">gedit</a>, <a href="http://alternativeto.net/software/vim/">Vim</a></li>
+						</ul>
+					</div>
+					<div class="span4">
+						<h3>Webbläsare</h3>
+						<ul>
+							<li><a href="http://getfirefox.com/">Firefox</a></li>
+							<li><a href="https://www.google.com/chrome?hl=sv">Chrome</a></li>
+							<li><a href="http://www.apple.com/se/safari/">Safari</a></li>
+							<li><a href="http://www.opera.com/">Opera</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span16">
+						<h2>En webbplats två beståndsdelar</h2>
+						<p>Det finns två övergripande beståndsdelar i en webbplats, innehåll och utseende. Skillnaden mellan de båda är viktiga att förstå.</p>
+					</div>
+					<div class="span8">
+						<h3>Innehåll</h3>
+						<p>Med innehåll menas själva datan, det är rubriker, brödtext, listor, bilder etc. Innehållet är alltid det primära i en webbplats, anpassa inte innehållet efter utseendet, utan tvärtom.</p>
+						<p>Som exempel är text där viktiga delar är fetmarkerade inte utseende, utan har en funktion att betona något viktigt i innehållet.</p>
+						<p>Programmeringspråket för innehållet är HTML</p>
+					</div>
+					<div class="span8">
+						<h3>Utseende</h3>
+						<p>Utseende är som en slags mask du lägger på innehållet för att strukturera innehållet visuellt, du styr val av teckensnitt för rubriker, färg på länkar bakgrundsbild och struktur.</p>
+						<p>Som exempel är kursiv text, som inte har som funktion att betona något i innehållet, bara något som rör utseende/designen.</p>
+						<p>Programmeringspråket för utseendet är CSS</p>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h2>Programmeringspråk för innehåll</h2>
+						<h3>Introduktion till HTML</h3>
+					</div>
+					<div class="span8">
+						<p>För innehåll används ett språk kallat <abbr title="Hyper Text Markup Language">HTML</a>, som du markerar olika delar av innehåll för att förklara vad det är, som med en märkpenna. Syftet med att markera innehållet är för att webbläsare, sökmotorer och skärmläsare ska kunna särskilja exempelvis en rubrik från brödtext.</p>
+						<p>Innehållet markeras med en tagg som skrivs ut före och efter innehållet, för exempelvis en huvudrubrik används taggen <code>&lt;h1&gt;</code>. 'h' står för <em>heading</em> och '1' för att det är en huvudrubrik, för underrubriker används <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> osv. "Pilarna" (vinkelparanteser) före och efter <code>&lt;</code>taggen<code>&gt;</code> finns där för att markera att det är just en tagg.</p>
+					</div>
+					<div class="span8">
+						<p>De taggar som markerat något innehåll måste "stängas", det innebär att man anger när taggen ska avslutas. För att markera ut en huvudrubrik ser en komplett tagg för en huvudrubrik ut såhär; <code>&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;</code>. Notera att den sista taggen har ett snedstreck <code>/</code>, det anger att det är taggens avslut.</p>
+						<p>Det finns taggar för olika typer av innehåll, vi kommer visa de mest viktiga och frekvent använda. Standarder styr  vilka taggar som finns och hur de ska använda.</p>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Grunden i ett HTML-dokument</h3>
+					</div>
+					<div class="span7">
+						<p>Ett HTML-dokument är som vilket annat text-dokument som helst, men som förutom innehållet, består av HTML-taggar. Dokumentets filändelse är .htm eller .html och kan öppnas med valfritt textredigeringsprogram.</p>
+						<p>För att webbläsaren ska veta att det är ett HTML-dokument den läser krävs ytterligare HTML-taggar som ger struktur åt dokumentet. I exemplet till höger finns vår huvudrubrik tillsammans med de taggar som krävs för att webbläsaren ska känna igen dokumentet som HTML.</p>
+						
+						<div class="alert-message block-message warning">
+							<p><strong>Notera</strong> hur och var varje tagg öppnas samt stängs. HTML-koden är intenderad (indragen) då en tagg innehåller fler taggar.</p>
+						</div>
+						
+					</div>
+					<div class="span9">
+						<aside class="window">
+						  <p>Mitt första HTML-dokument</p>
+						  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						</aside>
+						
+						<ul class="small">
+							<li><code>&lt;!DOCTYPE html&gt;</code> säger till webbläsare att det är dokument-typ HTML</li>
+							<li><code>&lt;html lang=&quot;sv&quot;&gt;</code> öppnar upp dokumentet och anger med attributet 'lang' att det är på svenska (sv)</li>
+							<li><code>&lt;head&gt;</code> öppnar upp dokumentets egenskaper</li>
+							<li><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code> som ligger inom <code>&lt;head&gt;</code> anger att teckenuppsättning UTF-8 ska användas, i den finns Å Ä Ö med. (Notera att denna inte markerar något innehåll, och då inte stängs)</li>
+							<li><code>&lt;title&gt;</code> anger dokumentets titel, syns bland annat i webbläsarens sidhuvud eller i sökresultat från sökmotorer</li>
+							<li><code>&lt;body&gt;</code> öppnar dokumentets "kropp" där allt innehåll finns, som du ser finns huvudrubriken du stött på tidigare</li>
+						</ul>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Ditt första HTML-dokument</h3>
+					</div>
+					<div class="span9">
+						<aside class="window">
+						  <p>Mitt första HTML-dokument</p>
+						  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						</aside>
+					</div>
+					<div class="span7">
+						<ol>
+							<li>Markera och kopiera HTML-koden till vänster</li>
+							<li>Klistra in den i en textredigerare</li>
+							<li>Spara dokumentet som HTML med filändelse .html</li>
+							<li>Öppna dokumentet i din webbläsare</li>
+						</ol>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Ytterligare 3 taggar</h3>
+					</div>
+					<div class="span7">
+						<p>Med <code>&lt;h1&gt;</code> färskt i minnet kommer här tre användbara taggar till. Vi fyller på med både tagg och innehåll i det dokument du redan har för enkelheten skull.</p>
+					
+						<table class="bordered-table">
+						        <thead>
+						          <tr>
+						            <th>Tagg</th>
+						            <th>Förkortning av</th>
+						            <th>Svensk översättning</th>
+						          </tr>
+						        </thead>
+						        <tbody>
+						          <tr>
+						            <th><code>&lt;h2&gt;</code></th>
+						            <td>Heading 2</td>
+						            <td>Rubrik 2</td>
+						          </tr>
+						          <tr>
+						            <th><code>&lt;p&gt;</code></th>
+						            <td>Paragraph</td>
+						            <td>Stycke</td>
+						          </tr>
+						          <tr>
+						            <th><code>&lt;a href=&quot;&quot;&gt;</code></th>
+						            <td>Anchor</td>
+						            <td>Länk</td>
+						          </tr>
+						        </tbody>
+						   </table>
+					</div>
+					<div class="span9">
+						<aside class="window">
+						  <p>Mitt första HTML-dokument</p>
+						  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+		&lt;p&gt;.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.&lt;/p&gt;
+		
+		&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+		&lt;p&gt;I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.&lt;/p&gt;
+		
+
+	&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						</aside>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Vad då href="" ?</h3>
+					</div>
+					<div class="span7">
+						<p>Taggar kan ha attribut, det är som egenskaper man kan ge taggen. Vissa taggar, som exempelvis <code>&lt;a&gt;</code>-taggen kräver att man skriver med ett attribut, href.</p>
+						<p>href är en förkortning av 'hypertext reference', tänk det som adress istället, som länken ska peka till. Följt av href är ett likamed-tecken <em>(=)</em> och två citationstecken <em>("")</em> där värdet för attributet skrivs in, <code>&lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt;</code>.</p>
+					</div>
+					<div class="span9">
+						<p>Det är viktigt att alla tecken och mellanslag finns på rätt ställe, annars läses dokumentet fel.</p>
+						
+						<table class="bordered-table">
+						        <thead>
+						          <tr>
+						            <th>Tagg</th>
+						            <th>Attribut-krav</th>
+						 				<th>Exempelvärde</th>
+						          </tr>
+						        </thead>
+						        <tbody>
+						         <tr>
+						            <th><code>&lt;h1&gt;</code></th>
+						            <td></td>
+										<td></td>
+						          </tr> 
+									<tr>
+						            <th><code>&lt;h2&gt;</code></th>
+						            <td></td>
+										<td></td>
+						          </tr>
+						          <tr>
+						            <th><code>&lt;p&gt;</code></th>
+						            <td></td>
+										<td></td>
+						          </tr>
+						          <tr>
+						            <th><code>&lt;a href=&quot;&quot;&gt;</code></th>
+						            <td>href</td>
+										<td>https://www.iis.se/</td>
+						          </tr>
+						        </tbody>
+						   </table>
+					</div>
+					<div class="span16">
+						<div class="alert-message block-message success small">
+							<p><strong>Tips!</strong> Kom ihåg att alltid skriva HTML-kod med små bokstäver. Använd också indentering (indrag) för att få en bra överblick och kod som andra lätt kan läsa.</p>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Att göra en punkt- eller nummerlista i HTML</h3>
+						<p>I HTML kan du göra två typer av listor, ordnad (1, 2, 3) eller oordnad (punktlista).</p>
+					</div>
+					<div class="span5">
+						<aside class="window">
+						  <p>Oordnad lista (punktlista)</p>
+						  <pre><code>
+&lt;ul&gt;
+	&lt;li&gt;F&ouml;rsta punkten&lt;/li&gt;
+	&lt;li&gt;Andra punkten&lt;/li&gt;
+	&lt;li&gt;Tredje punkten&lt;/li&gt;
+&lt;/ul&gt;
+						</code></pre>
+						</aside>
+						
+						<ul>
+							<li>Första punkten</li>
+							<li>Andra punkten</li>
+							<li>Tredje punkten</li>
+						</ul>
+					</div>
+					<div class="span5">
+						<aside class="window">
+						  <p>Ordnad lista (nummrerad)</p>
+						  <pre><code>
+&lt;ol&gt;
+	&lt;li&gt;F&ouml;rsta punkten&lt;/li&gt;
+	&lt;li&gt;Andra punkten&lt;/li&gt;
+	&lt;li&gt;Tredje punkten&lt;/li&gt;
+&lt;/ol&gt;
+						</code></pre>
+						</aside>
+						
+						<ol>
+							<li>Första punkten</li>
+							<li>Andra punkten</li>
+							<li>Tredje punkten</li>
+						</ol>
+					</div>
+					<div class="span6">
+						<p><code>&lt;ol&gt;</code> står för 'ordered list', och <code>&lt;ul&gt;</code> för '<strong>un</strong>ordered list'. <code>&lt;li&gt;</code> används för varje punkt på någon av dessa två typer av listor. Inte någon annanstans används <code>&lt;li&gt;</code>, förutom <strong>inom</strong> listor.</p>
+						<div class="alert-message block-message warning small">
+							<p><strong>OBS!</strong> Tänk noga över vilken list-typ som passar bäst för ditt innehåll. Skillnaden mellan oordnad och ordnad lista kan spela stor roll för hur ditt innehåll uppfattas.</p>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Du känner nu till 7 taggar</h3>
+						<p>Här kommer en snabb genomgång.</p>
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Tagg</th>
+					            <th>Förkortning av</th>
+					            <th>Svensk översättning</th>
+									<th>Attribut-exempel</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <th><code>&lt;h1&gt;</code></th>
+					            <td>Heading 1</td>
+					            <td>Rubrik 1</td>
+									<td></td>
+					          </tr> 
+								<tr>
+					            <th><code>&lt;h2&gt;</code></th>
+					            <td>Heading 2</td>
+					            <td>Rubrik 2</td>
+									<td></td>
+					          </tr>
+					          <tr>
+					            <th><code>&lt;p&gt;</code></th>
+					            <td>Paragraph</td>
+					            <td>Stycke</td>
+									<td></td>
+					          </tr>
+					          <tr>
+					            <th><code>&lt;a href=""&gt;</code></th>
+					            <td>Anchor</td>
+					            <td>Länk</td>
+									<td>href="https://www.iis.se/om-se/urkund-och-stadgar"</td>
+					          </tr>
+								<tr>
+					            <th><code>&lt;ol&gt;</code></th>
+					            <td>Ordered list</td>
+					            <td>Ordnad lista</td>
+									<td></td>
+					          </tr>
+								 <tr>
+					            <th><code>&lt;ul&gt;</code></th>
+					            <td>Unordered list</td>
+					            <td>Ordnad lista</td>
+									<td></td>
+					          </tr>
+								 <tr>
+					            <th><code>&lt;li&gt;</code></th>
+					            <td>List item</td>
+					            <td>Listpunkt</td>
+									<td></td>
+					          </tr>
+					        </tbody>
+					   </table>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Avstämning</h3>
+						<p>Med den kod du hade sedan tidigare, och en oordnad lista, bör ditt dokument se ut så här.</p>
+						
+						<aside class="window">
+						  <p>Mitt första HTML-dokument</p>
+							<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+		&lt;p&gt;.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.&lt;/p&gt;
+		
+		&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+		&lt;p&gt;I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.&lt;/p&gt;
+		
+		&lt;ul&gt;
+			&lt;li&gt;.SE ansvarar för Internets svenska toppdomän .se&lt;/li&gt;
+			&lt;li&gt;.SE ansvarar för administration och teknisk drift av det nationella domännamnregistret&lt;/li&gt;
+			&lt;li&gt;I enlighet med stiftelsens urkund och stadgar gynnar vi på olika sätt Internetutvecklingen i Sverige.&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+							</code></pre>
+						</aside>
+						
+						<h4>Resultatet</h4>
+						<div class="result">
+							<h1>.SE är en oberoende allmännyttig organisation</h1>
+							<p>.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.</p>
+
+							<h2>Internetutveckling</h2>
+							<p>I enlighet med stiftelsens <a href="https://www.iis.se/om-se/urkund-och-stadgar">urkund och stadgar</a> gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.</p>
+
+							<ul>
+							  <li>.SE ansvarar för Internets svenska toppdomän .se</li>
+							  <li>.SE ansvarar för administration och teknisk drift av det nationella domännamnregistret</li>
+						  	  <li>I enlighet med stiftelsens urkund och stadgar gynnar vi på olika sätt Internetutvecklingen i Sverige.</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Två typer av taggar, inline och block</h3>
+						<p>Det går att sortera in alla taggar i två grupper, inline och block. Innehåll som rubriker, listor och brödtext ska visas på en egen rad, de här taggarna benämns som block-element. På namnet går det att höra hur det fungerar, det lägger som en block på sidan och tar upp hela bredden, från sida till sida.</p>
+						<p>Taggen <code>&lt;a&gt;</code> som vi använder för att länka text är tydligt inte ett block-element, där vill vi att det som kommer efter taggen ska lägga sig bredvid, då är det ett inline-element. Du ser det tydligt i ditt exempel. Som tur är behöver du inte bry dig om de är inline eller block, det är satt automatiskt.</p>
+						<p>Så här hade ditt dokument sett ut om rubriker, brödtext och listor inte var block-element;</p>
+						<div class="result no-block">
+							<h1>.SE är en oberoende allmännyttig organisation</h1>
+							<p>.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.</p>
+
+							<h2>Internetutveckling</h2>
+							<p>I enlighet med stiftelsens <a href="https://www.iis.se/om-se/urkund-och-stadgar">urkund och stadgar</a> gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.</p>
+
+							<ul>
+							  <li>.SE ansvarar för Internets svenska toppdomän .se</li>
+							  <li>.SE ansvarar för administration och teknisk drift av det nationella domännamnregistret</li>
+						  	  <li>I enlighet med stiftelsens urkund och stadgar gynnar vi på olika sätt Internetutvecklingen i Sverige.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Lägga in bilder</h3>
+						<p>För att lägga in en bild använder vi taggen <code>&lt;img&gt;</code> som är förkortning av 'image', bild på svenska. Den kräver att vi har med två attribut, <code>src</code> (source) och <code>alt</code> (alternative).</p>
+					</div>
+					<div class="span6">
+						<aside class="window">
+						  <p>Lägga in en bild</p>
+							<pre><code>
+&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt;
+							</code></pre>
+						</aside>
+						<p>I första attributet, <code>src</code> (källa) skriver du in bildens sökväg, namn och filändelse. I exemplet ovan ligger bilden logo.png i samma mapp som html-dokumentet. Du kan <a href="pictures/logo.png">spara ned .SE logotyp</a> som vi använder i exemplet.</p>
+					</div>
+					<div class="span5">
+						<p>I andra attributet, <code>alt</code> (alternativ), beskriver du bilden i text. Det här är för att sökmotorer, skärmläsare och andra "maskiner" ska kunna "se" bilden.</p>
+						<p>När bilden visas i webbläsaren är den i originalstorlek, ev. förminskning gör du i ett bildbehandlingsprogram.</p>
+					</div>
+					<div class="span5">
+						<div class="result">
+							<img src="pictures/logo.png" alt=".SE logotyp">
+						</div>
+						<p><code>&lt;img&gt;</code> är ett inline-element, vilket innebär att om du exempelvis inkluderar bilden i ett textstycke (<code>&lt;p&gt;</code>) så hamnar texten före och/eller efter bilden.</p>
+					</div>
+					<div class="span11">
+						<h3>Lägg in bilden i ditt dokument</h3>
+						
+						<aside class="window rows">
+							<p>Mitt första HTML-dokument</p>
+							<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+		&lt;p&gt;.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.&lt;/p&gt;
+		
+		&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+		&lt;p&gt;&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt; I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.&lt;/p&gt;
+		
+		&lt;ul&gt;
+			&lt;li&gt;.SE ansvarar för Internets svenska toppdomän .se&lt;/li&gt;
+			&lt;li&gt;.SE ansvarar för administration och teknisk drift av det nationella domännamnregistret&lt;/li&gt;
+			&lt;li&gt;I enlighet med stiftelsens urkund och stadgar gynnar vi på olika sätt Internetutvecklingen i Sverige.&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+							</code></pre>
+						</aside>
+					</div>
+					<div class="span5">
+						Lorem
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Så fungerar mått</h3>
+					</div>
+					<div class="span5">
+						<p><img src="pictures/logo.png" alt=".SE logotyp"> Bilden logo.png är 100 pixlar (px) bred och 43 pixlar hög. I tryck används centimeter, millimeter eller tum, också för webbplatser finns fler mått än pixlar; em, pt och procent. Så vad är skillnaden? En enkel regel för textstorlek är 1em = 12pt = 16px = 100%. I exemplen håller vi oss till pixlar.</p>
+					</div>
+					<div class="span5 right">
+						<p>Exempel, 100 pixlar bred.<br>
+							Exempel, 200 pixlar bred.<br>
+							Exempel, 120 pixlar bred.<br>
+							Exempel, 340 pixlar bred.<br>
+							Exempel, 2 pixlar bred.<br>
+							Exempel, 1 em bred.<br>
+							Exempel, 5 em bred.<br>
+							Exempel, 12 pt bred.<br>
+							Exempel, 16 px bred.<br>
+							Exempel, 50% (av 340 px) bred.
+						</p>
+					</div>
+					<aside class="span6">
+						<canvas class="bar" width="100" height="10"></canvas><br>
+						<canvas class="bar" width="200" height="10"></canvas><br>
+						<canvas class="bar" width="120" height="10"></canvas><br>
+						<canvas class="bar" width="340" height="10"></canvas><br>
+						<canvas class="bar" width="2" height="10"></canvas><br>
+						<canvas class="bar" width="16" height="10"></canvas><br>
+						<canvas class="bar" width="80" height="10"></canvas><br>
+						<canvas class="bar" width="16" height="10"></canvas><br>
+						<canvas class="bar" width="16" height="10"></canvas><br>
+						<canvas class="bar" width="170" height="10"></canvas><br>
+					</aside>
+				</div>
+				<div class="row">
+					<div class="span4">
+						<p>220</p>
+					</div>
+					<div class="span4">
+						<p>Bild</p>
+					</div>
+					<div class="span4">
+						<p>Bild</p>
+					</div>
+					<div class="span4">
+						<p>Bild</p>
+					</div>
+				</div>
+				
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Boxmodellen</h3>
+					</div>
+					<div class="span8">
+						<p>Boxmodellen förklarar hur de olika ytorna kring ett blockelement fungerar. Som du säkert sett i ditt exempeldokument finns det marginal kring rubrikerna. För att ta ytterligare ett exempel, <code>&lt;p&gt;</code>, textstycke. Denna består av fyra ytor;</p>
+							
+						<ol>
+							<li>Margin (marginal) ger mellanrum mellan textstycket och andra element</li>
+							<li>Border är en kantlinje man kan sätta runt ett element</li>
+							<li>Padding ger utrymme mellan kantlinjen (border) och själva innehållet</li>
+							<li>Innehållsytan där innehållet är placerat, texten i detta fall. Den har höjd och bredd.</li>
+						</ol>
+						
+					</div>
+					<div class="span8">
+						<p>Varje yta har fyra sidor; toppen, höger, botten och vänster.</p>
+						<figure class="boxmodel">
+							<div class="margin">
+								margin <span class="top">Top</span> <span class="right">Right</span> <span class="bottom">Bottom</span> <span class="left">Left</span>
+								<div class="border">
+									Border <span class="top">Top</span> <span class="right">Right</span> <span class="bottom">Bottom</span> <span class="left">Left</span>
+									<div class="padding">
+										Padding <span class="top">Top</span> <span class="right">Right</span> <span class="bottom">Bottom</span> <span class="left">Left</span>
+										<div class="width_height">
+											width & height
+										</div>
+									</div>
+								</div>
+							</div>
+							<figcaption>En illustration av boxmodellen</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Standardvärden</h3>
+					</div>
+					<div class="span4">
+						<p>Vissa taggar har redan från början marginaler, padding mm. De finns där för att sidan ska vara lättläslig utan något utseende (CSS).</p>
+						<p>Endast block-element nyttjar boxmodellen, inline-element som exempelvis <code>&lt;a&gt;</code> nyttjar inte boxmodellen.</p>
+					</div>
+					<div class="span6">
+						<figure class="boxmodel">
+							<div class="margin">
+								margin <span class="top"><b>21 px</b></span> <span class="right">0 px</span> <span class="bottom"><b>21 px</b></span> <span class="left">0 px</span>
+								<div class="border">
+									Border <span class="top">0 px</span> <span class="right">0 px</span> <span class="bottom">0 px</span> <span class="left">0 px</span>
+									<div class="padding">
+										Padding <span class="top">0 px</span> <span class="right">0 px</span> <span class="bottom">0 px</span> <span class="left">0 px</span>
+										<div class="width_height">
+											width & height
+										</div>
+									</div>
+								</div>
+							</div>
+							<figcaption><code>&lt;h1&gt;</code> har margin som medföljande värde</figcaption>
+						</figure>
+					</div>
+					<div class="span6">
+						<figure class="boxmodel">
+							<div class="margin">
+								margin <span class="top"><b>16 px</b></span> <span class="right">0 px</span> <span class="bottom"><b>16 px</b></span> <span class="left">0 px</span>
+								<div class="border">
+									Border <span class="top">0 px</span> <span class="right">0 px</span> <span class="bottom">0 px</span> <span class="left">0 px</span>
+									<div class="padding">
+										Padding <span class="top">0 px</span> <span class="right">0 px</span> <span class="bottom">0 px</span> <span class="left"><b>40</b></span>
+										<div class="width_height">
+											width & height
+										</div>
+									</div>
+								</div>
+							</div>
+							<figcaption><code>&lt;ul&gt;</code> har både margin och padding</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Några exempel för att förstå boxmodellen</h3>
+					</div>
+					<div class="span4">
+						<p>Till höger finns några exempel där vi ändrat utseendet, jämför och se hur boxmodellen påverkas.</p>
+						<p>Att ändra marginal, padding mm. är förändringar på utseendet och inte innehållet, du kommer i nästa kapitel få veta hur du ändrat utseendet med hjälp av CSS.</p>
+						
+						<div class="alert-message block-message warning">
+							<p><strong>Notera!</strong> Boxmodellen läses klockvis, från topp till höger, ned och vänster.</p>
+						</div>
+					</div>
+					<div class="span6">
+						<div style="background-color: #eee; padding: 5px; margin: 10px 0 20px 0">
+							<p style="margin: 10px; border: 1px solid red; padding: 5px 10px 5px 10px">.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som [...]</p>
+						</div>
+					
+						<p>Ovan är ett textstycke (<code>&lt;p&gt;</code>), den grå bakgrunden finns där för att du lättare ska kunna se marginalerna kring textstycket.</p>
+						<figure class="boxmodel">
+							<div class="margin">
+								margin <span class="top"><b>15</b></span> <span class="right"><b>15</b></span> <span class="bottom"><b>15</b></span> <span class="left"><b>15</b></span>
+								<div class="border">
+									Border (röd) <span class="top"><b>1</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>1</b></span> <span class="left"><b>1</b></span>
+									<div class="padding">
+										Padding <span class="top"><b>10</b></span> <span class="right"><b>10</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>10</b></span>
+										<div class="width_height">
+											288 x 91
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="span6">
+						<div style="background-color: #eee; padding: 5px; margin: 10px 0 20px 0">
+							<p style="margin: 8px 8px 38px 8px; border: 3px solid red; border-right: 1px solid red;  padding: 5px 10px 5px 10px">.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som [...]</p>
+						</div>
+					
+						<p>Textstycket (<code>&lt;p&gt;</code>) till vänster är identisk med den vänstra, förutom kantlinje och ett margin.</p>
+						
+						<figure class="boxmodel">
+							<div class="margin">
+								margin <span class="top"><b>15</b></span> <span class="right"><b>15</b></span> <span class="bottom"><b>40</b></span> <span class="left"><b>15</b></span>
+								<div class="border">
+									Border (röd) <span class="top"><b>3</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>3</b></span> <span class="left"><b>3</b></span>
+									<div class="padding">
+										Padding <span class="top"><b>10</b></span> <span class="right"><b>10</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>10</b></span>
+										<div class="width_height">
+											width & height
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Sammanfattning av HTML-kapitlet</h3>
+					</div>
+					<div class="span8">
+						<ul>
+							<li><abbr title="Hyper Text Markup Language">HTML</a> är programmeringspråket för att markera innehåll</li>
+							<li>HTML-språket består av taggar för att markera olika typer av innehåll som brödtext, rubriker, länkar och listor</li>
+							<li>Markerar taggen en sektion i innehållet öppnas den före (<code>&lt;h1&gt;</code>) och stängs efteråt (<code>&lt;/h1&gt;</code>), för att markera avslut.</li>
+							<li>Taggar som <strong>inte</strong> markerar innehåll, exempelvis <code>&lt;img&gt;</code> som inkluderar en bild, har ingen stängning eftersom den inte markerar något innehåll.</li>
+							<li>Attribut är egenskaper som kan sättas på elementet (<code>&lt;a href=&quot;&quot;&gt;, &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;</code>) finns det krav på attribut</li>
+						</ul>
+					</div>
+					<div class="span8">
+						<ul>
+							<li>Vissa taggar får bara finnas inom en annan tag, <code>&lt;li&gt;</code>	är en sådan tagg, den får bara finnas inom <code>&lt;ul&gt;</code> och <code>&lt;ol&gt;</code>.</li>
+							<li>Det finns block och inline-element</li>
+							<li>Du kan lägga in bilder med taggen <code>img</code>, du känner också till att den kräver två attribut; <code>src</code> och <code>alt</code>.</li>
+							<li>Grundläggande mått som pixlar (px)</li>
+							<li>Logiken i boxmodellen och att några taggar redan har margin eller padding från början</li>
+						</ul>
+					</div>
+					<div class="span16">
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Tagg</th>
+									<th>Förkortning av</th>
+									<th>Attribut</th>
+									<th>Inline/Block</th>
+									<th>margin, border, padding (upp, höger, ned, vänster)</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <th><code>&lt;h1&gt;</code></th>
+					            <td>Heading 1</td>
+									<td></td>
+									<td>Block</td>
+									<td>margin: 21px 0px 21px 0px</td>
+					          </tr> 
+								<tr>
+					            <th><code>&lt;h2&gt;</code></th>
+					            <td>Heading 2</td>
+					            <td></td>
+									<td>Block</td>
+									<td>margin: 19px 0px 19px 0px</td>
+					          </tr>
+					          <tr>
+					            <th><code>&lt;p&gt;</code></th>
+					            <td>Paragraph</td>
+					            <td></td>
+									<td>Block</td>
+									<td>margin: 16px 0px 16px 0px</td>
+					          </tr>
+					          <tr>
+					            <th><code>&lt;a&gt;</code></th>
+					            <td>Anchor</td>
+									<td><code>href</code></td>
+									<td>Inline</td>
+									<td></td>
+					          </tr>
+								<tr>
+					            <th><code>&lt;ol&gt;</code></th>
+					            <td>Ordered list</td>
+					            <td></td>
+									<td>Block</td>
+									<td>margin: 16px 0px 16px 0px padding: 0px 0px 0px 40px</td>
+					          </tr>
+								 <tr>
+					            <th><code>&lt;ul&gt;</code></th>
+					            <td>Unordered list</td>
+					            <td></td>
+									<td>Block</td>
+									<td>margin: 16px 0px 16px 0px padding: 0px 0px 0px 40px</td>
+					          </tr>
+								 <tr>
+					            <th><code>&lt;li&gt;</code></th>
+					            <td>List item</td>
+					            <td></td>
+									<td>Block</td>
+									<td></td>
+					          </tr>
+								<tr>
+					            <th><code>&lt;img&gt;</code></th>
+					            <td>Image</td>
+					            <td><code>src</code> <code>alt</code></td>
+									<td>Inline</td>
+									<td></td>
+					          </tr>
+					        </tbody>
+					   </table>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<footer>
+			<p>Erkännande-IckeKommersiell-DelaLika 2.5 Sverige.</p>
+		</footer>
+	</div>
+	<script type="text/javascript" src="http://use.typekit.com/myi0dcx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	<!--[if lt IE 7 ]>
+		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+</body>
+</html>
