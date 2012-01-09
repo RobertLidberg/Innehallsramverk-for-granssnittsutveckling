@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Lär dig ta fram webbplatser på rätt sätt, vi hjälper dig i 30 pragmatiska steg</title>
+	<title>Pragmatisk gränssnittsutveckling (webbdesign)</title>
 	<meta name="description" content="">
 	<meta name="author" content="Robert Lidberg">
 
@@ -17,7 +17,7 @@
 	<script>
 	  hljs.tabReplace = '    ';
 	  hljs.initHighlightingOnLoad();
-	  </script>
+	</script>
 	<script src="js/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -26,15 +26,14 @@
 		<div class="row">
 			<div class="span16">
 				<header>
-					<h1>Pragmatisk webbdesign, i 30 steg</h1>
+					<h1>Gränssnittsutveckling (webbdesign)</h1>
 				</header>
 			</div>
 		</div>
 		<div class="row" >
 			<div class="span16">
 				<blockquote>
-					<p>Pragmatisk.se är ett projekt finansierat av Internetstiftelsen. Projektets syfte är att ge ramar till ämnet, och specifikt gymnasiekursen, webbdesign. I 30 steg kommer du följa en process som är konkret och enkelt utformad från start till slut, och successivt under alla steg lär du dig alla de delar som krävs för att ta fram en god webbplats. Innehållet är framtaget och bygger på tre hörnstenar; 1) Gällande standarder 2) Best practice 3) Bransch-praxis.</p>
-					<!--<small>Robert Lidberg, Duva AB</html>-->
+					<p>Pragmatisk.se är ett projekt finansierat av Internetstiftelsen. Projektets syfte är att ge ramar till ämnet, och specifikt gymnasiekursen, webbdesign. I ett antal steg kommer du följa en process som är konkret och enkelt utformad från start till slut, successivt lär du dig de delar som krävs för att ta fram en god webbplats från grunden.</p>
 				</blockquote>
 			</div>
 		</div>
@@ -567,10 +566,10 @@
 						</div>
 						<p><code>&lt;img&gt;</code> är ett inline-element, vilket innebär att om du exempelvis inkluderar bilden i ett textstycke (<code>&lt;p&gt;</code>) så hamnar texten före och/eller efter bilden.</p>
 					</div>
-					<div class="span11">
+					<div class="span16">
 						<h3>Lägg in bilden i ditt dokument</h3>
 						
-						<aside class="window rows">
+						<aside class="window">
 							<p>Mitt första HTML-dokument</p>
 							<pre><code>
 &lt;!DOCTYPE html&gt;
@@ -582,10 +581,10 @@
 	&lt;body&gt;
 
 		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
-		&lt;p&gt;.SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.&lt;/p&gt;
+		&lt;p&gt;&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt; .SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.&lt;/p&gt;
 		
 		&lt;h2&gt;Internetutveckling&lt;/h2&gt;
-		&lt;p&gt;&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt; I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.&lt;/p&gt;
+		&lt;p&gt;I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.&lt;/p&gt;
 		
 		&lt;ul&gt;
 			&lt;li&gt;.SE ansvarar för Internets svenska toppdomän .se&lt;/li&gt;
@@ -598,8 +597,22 @@
 							</code></pre>
 						</aside>
 					</div>
+					<div class="span16">
+						<h3>Men vart ska den ligga?</h3>
+					</div>
 					<div class="span5">
-						Lorem
+						<p>Är du osäker på vart du ska lägga innehållet, utgå från hur en tidning eller bok är utformad.</p>
+						<p>I HTML-koden ovan är bilden placerad inom ett textstycke (<code>&lt;p&gt;</code>), bilden hör alltså ihop med innehållet i det textstycket.</p>
+					</div>
+					<div class="span5">
+							<p>Det finns två enkla regler för vart du kan placera olika element;</p>
+							<ol>
+								<li>Logik, exempelvis har du troligen aldrig sett en lista i en rubrik.</li>
+								<li>Block-element kan <strong>inte</strong> läggas i inline-element, bara tvärt om.</li>
+							</ol>
+					</div>
+					<div class="span5">
+						
 					</div>
 				</div>
 				
@@ -639,20 +652,28 @@
 					</aside>
 				</div>
 				<div class="row">
-					<div class="span4">
-						<p>220</p>
-					</div>
-					<div class="span4">
-						<p>Bild</p>
-					</div>
-					<div class="span4">
-						<p>Bild</p>
-					</div>
-					<div class="span4">
-						<p>Bild</p>
+					<div class="span16">
+						<h3>Bildexempel</h3>
+						<p><em>100x90</em> avser 100 pixlar bred och 90 pixlar hög.</p>
+						<img class="thumbnail" src="http://placehold.it/100x90" alt="">
+						<img class="thumbnail" src="http://placehold.it/200x130" alt="">
+						<img class="thumbnail" src="http://placehold.it/120x220" alt="">
+						<img class="thumbnail" src="http://placehold.it/340x180" alt="">
+						<img class="thumbnail" src="http://placehold.it/90x50" alt="">
+						<img class="thumbnail" src="http://placehold.it/70x100" alt="">
 					</div>
 				</div>
 				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>...</h3>
+					</div>
+					<div class="span8">
+						
+					</div>
+				</div>
 				
 				<hr>
 				
@@ -806,16 +827,16 @@
 						<ul>
 							<li><abbr title="Hyper Text Markup Language">HTML</a> är programmeringspråket för att markera innehåll</li>
 							<li>HTML-språket består av taggar för att markera olika typer av innehåll som brödtext, rubriker, länkar och listor</li>
-							<li>Markerar taggen en sektion i innehållet öppnas den före (<code>&lt;h1&gt;</code>) och stängs efteråt (<code>&lt;/h1&gt;</code>), för att markera avslut.</li>
-							<li>Taggar som <strong>inte</strong> markerar innehåll, exempelvis <code>&lt;img&gt;</code> som inkluderar en bild, har ingen stängning eftersom den inte markerar något innehåll.</li>
-							<li>Attribut är egenskaper som kan sättas på elementet (<code>&lt;a href=&quot;&quot;&gt;, &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;</code>) finns det krav på attribut</li>
+							<li>Markerar taggen en sektion i innehållet öppnas den före (<code>&lt;h1&gt;</code>) och stängs efteråt (<code>&lt;/h1&gt;</code>), för att markera avslut</li>
+							<li>Taggar som <strong>inte</strong> markerar innehåll, exempelvis <code>&lt;img&gt;</code> som inkluderar en bild, har ingen stängning eftersom den inte markerar något innehåll</li>
+							<li>Attribut är egenskaper som kan sättas på elementet (<code>&lt;a href=&quot;&quot;&gt;, &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;</code>), för vissa taggar finns det krav på attribut</li>
 						</ul>
 					</div>
 					<div class="span8">
 						<ul>
-							<li>Vissa taggar får bara finnas inom en annan tag, <code>&lt;li&gt;</code>	är en sådan tagg, den får bara finnas inom <code>&lt;ul&gt;</code> och <code>&lt;ol&gt;</code>.</li>
+							<li>Vissa taggar får bara finnas inom en annan tag, <code>&lt;li&gt;</code>	är en sådan tagg, den får bara finnas inom <code>&lt;ul&gt;</code> och <code>&lt;ol&gt;</code></li>
 							<li>Det finns block och inline-element</li>
-							<li>Du kan lägga in bilder med taggen <code>img</code>, du känner också till att den kräver två attribut; <code>src</code> och <code>alt</code>.</li>
+							<li>Du kan lägga in bilder med taggen <code>img</code>, du känner också till att den kräver två attribut; <code>src</code> och <code>alt</code></li>
 							<li>Grundläggande mått som pixlar (px)</li>
 							<li>Logiken i boxmodellen och att några taggar redan har margin eller padding från början</li>
 						</ul>
@@ -892,6 +913,170 @@
 					   </table>
 					</div>
 				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h2>Programmeringspråk för utseende</h2>
+						<h3>Introduktion till CSS (stilmall)</h3>
+					</div>
+					<div class="span8">
+						<p>Till skillnad mot <abbr title="Hyper Text Markup Language">HTML</abbr> som bara handlar om innehåll, är <abbr title="Cascading Style Sheets">CSS</abbr> enbart om utseende. Det innehåll vi markerat med hjälp av HTML kan vi nu ändra utseende för, exempelvis textstorlek för huvudrubriken <code>&lt;h1&gt;</code></p>
+						
+						<p>CSS är till språket olikt HTML, istället för att markera innehåll kommer vi matcha och koppla ihop rätt utseende med rätt tagg (element). Tänk dig CSS som ett regelverk för hur saker och ting ska se ut, och precis som med HTML skriver du CSS-reglerna i ett vanligt textdokument och sparar med <em>.css</em> som filändelse.</p>
+						
+						<p>Så här kan en CSS-regel ut; <code>h1 {font-size: 12px;}</code>. Den ändrar alla huvudrubrikers <em>(h1)</em> textstorlek till 12px.</p>
+					</div>
+					<div class="span8">
+						<p>I början av en CSS anger vi vilka element som regeln ska gälla för, i det här fallet är det för huvudrubriken <code>h1</code>. Det följs av en "måsvinge" (krullparantes) <code>{</code> som har till funktion att markera starten för CSS-reglerna, och i slutet stänga den <code>}</code>, vilket påminner om logiken i HTML om att stänga och öppna taggar.</p>
+						<p>Exemplet har en CSS-regel; <code>font-size</code>, som är en av många egenskaper i CSS, denna ändrar storleken på texten. Efter egenskapen <em>font-size</em> markeras avslutet på den med ett kolon, som är skiljetecken mellan egenskap och värde, <code>12px</code>. Värdet avslutas med semikolon <code>;</code> som gör det möjligt att fylla på med fler CSS-egenskaper efteråt.
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Koppla ihop CSS med HTML</h3>
+						<p>Vi återgår till ett tidigare exempel som bara innehåller en huvudrubrik, spara detta dokument som <em>index.html</em>, och spara CSS-dokumentet med den tidigare regeln (<code>h1 {font-size: 12px;}</code>) som <em>style.css</em>. Lägg <em>style.css</em> i samma katalog som <em>index.html</em>.</p>
+					</div>
+					<div class="span8">
+						<aside class="window">
+						  <p>index.html</p>
+						  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+		
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						</aside>
+					</div>
+					<div class="span8">
+						<aside class="window">
+							<p>style.css</p>
+							<pre><code>
+h1 {font-size: 12px;}
+							</code></pre>
+						</aside>
+						<p>Vi har lagt till en rad i HTML-dokumentet, <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</code>, den kopplar ihop index.html med <em>style.css</em>. Taggen <code>link</code> används till för att bland annat länka in stilmallar, attributet <code>rel</code> beskriver vad vi länkar in (stilmall) och <code>href</code>, som du stött på innan, visar sökvägen till filen <em>style.css</em>.</p>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Resultat av exemplet</h3>
+						<p>Med hjälp av CSS har vi ändrat textstorleken från standard 32px till 12px. En huvudrubrik (<code>&lt;h1&gt;</code>) är från början 32px, det är ett värde den har med sig, precis som standard-marginalerna vi gick igenom tidigare i boxmodellen.</p>
+					</div>
+					<div class="span8">
+						<h4>Utan CSS-regeln:</h4>
+						<div class="result">
+							<h1 style="font-size: 32px">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
+					</div>
+					<div class="span8">
+						<h4>Med CSS-regeln:</h4>
+						<div class="result">
+							<h1 style="font-size: 12px">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span8">
+						<h3>Färger</h3>
+						<p>För att färgsätta innehåll och grafiska element, som text, länkar, linjer, bakgrunder mm. används ett hexadecimalt värde, RGB eller namn. Hex och RGB anger en kombination för (R)öd (G)rönt och (B)lått för att få rätt färg.</p>
+						
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Egenskap</th>
+									<th>Värde</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <th><code>color:</code></th>
+					            <td>#ffffff</td>
+					          </tr> 
+								<tr>
+					            <th><code>color:</code></th>
+					            <td>rgb(255,255,255);</td>
+					          </tr>
+								<tr>
+					            <th><code>color:</code></th>
+					            <td>white</td>
+					          </tr>
+					        </tbody>
+					   </table>
+						<p>RGB kan också skrivas som procent, 255 = 100%. Alltså är rgb(255,255,255); samma som rgb(100%,100%,100%);</p>
+					</div>
+					<div class="span8">
+						<img src="pictures/adobepho.png" alt="Skärmdump från Adobe Photoshop">
+						<p>I Adobe Photoshop får du både det hexadecimala värdet <em>(#ffffff)</em> och RGB-värdet <em>(255,255,255)</em>.</p>
+					</div>
+					<div class="span8">
+						...
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span8">
+						<h3>Färgexempel</h3>
+						<p></p>
+						
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Egenskap</th>
+									<th>Värde</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <th><code>color:</code></th>
+					            <td>#ffffff</td>
+					          </tr> 
+								<tr>
+					            <th><code>color:</code></th>
+					            <td>rgb(255,255,255);</td>
+					          </tr>
+								<tr>
+					            <th><code>color:</code></th>
+					            <td>white</td>
+					          </tr>
+					        </tbody>
+					   </table>
+						<p>RGB kan också skrivas som procent, 255 = 100%. Alltså är rgb(255,255,255); samma som rgb(100%,100%,100%);</p>
+					</div>
+					<div class="span8">
+						<img src="pictures/adobepho.png" alt="Skärmdump från Adobe Photoshop">
+						<p>I Adobe Photoshop får du både det hexadecimala värdet <em>(#ffffff)</em> och RGB-värdet <em>(255,255,255)</em>.</p>
+					</div>
+					<div class="span8">
+						...
+					</div>
+				</div>
+				
+				
+				
+				
 				
 				
 				
