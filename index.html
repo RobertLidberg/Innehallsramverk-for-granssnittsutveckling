@@ -611,8 +611,15 @@
 								<li>Block-element kan <strong>inte</strong> läggas i inline-element, bara tvärt om.</li>
 							</ol>
 					</div>
-					<div class="span5">
-						
+					<div class="span6">
+						<p>
+							<span class="label important">Fel</span> <del><code>&lt;p&gt;&lt;h1&gt;En rubrik&lt;/h1&gt; Br&ouml;dtext&lt;/p&gt;</code></del><br>
+							<span class="label success">Rätt</span> <ins><code>&lt;h1&gt;En rubrik&lt;/h1&gt; &lt;p&gt;Br&ouml;dtext&lt;/p&gt;</code></del></ins>
+						</p>
+						<p>
+							<span class="label important">Fel</span> <del><code>&lt;p&gt;Br&ouml;dtext med &lt;a href=&quot;http://iis.se/&quot;&gt;l&auml;nk&lt;/p&gt;&lt;/a&gt;</code></del><br>
+							<span class="label success">Rätt</span> <ins><code>&lt;p&gt;Br&ouml;dtext med &lt;a href=&quot;http://iis.se/&quot;&gt;l&auml;nk&lt;/a&gt;&lt;/p&gt;</code></del></ins> (Avsluta taggar i rätt ordning)
+						</p>
 					</div>
 				</div>
 				
@@ -661,17 +668,6 @@
 						<img class="thumbnail" src="http://placehold.it/340x180" alt="">
 						<img class="thumbnail" src="http://placehold.it/90x50" alt="">
 						<img class="thumbnail" src="http://placehold.it/70x100" alt="">
-					</div>
-				</div>
-				
-				<hr>
-				
-				<div class="row">
-					<div class="span16">
-						<h3>...</h3>
-					</div>
-					<div class="span8">
-						
 					</div>
 				</div>
 				
@@ -977,20 +973,51 @@ h1 {font-size: 12px;}
 				
 				<div class="row">
 					<div class="span16">
-						<h3>Resultat av exemplet</h3>
-						<p>Med hjälp av CSS har vi ändrat textstorleken från standard 32px till 12px. En huvudrubrik (<code>&lt;h1&gt;</code>) är från början 32px, det är ett värde den har med sig, precis som standard-marginalerna vi gick igenom tidigare i boxmodellen.</p>
+						<h3>Matcha CSS med rätt HTML-element</h3>
+						<p>Nu när de två dokumenten är sammanlänkade kommer HTML-dokumentet hämta reglerna från CSS-dokumentet.</p>
 					</div>
 					<div class="span8">
+						<aside class="window">
+						  <p>index.html</p>
+						  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;sv&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Mitt första HTML-dokument&lt;/title&gt;
+		
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;h1&gt;.SE är en oberoende allmännyttig organisation&lt;/h1&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						</aside>
+						<aside class="window">
+							<p>style.css</p>
+							<pre><code>
+h1 {font-size: 12px;}
+							</code></pre>
+						</aside>
+						<div class="result">
+							<h1 style="font-size: 12px">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
 						<h4>Utan CSS-regeln:</h4>
 						<div class="result">
 							<h1 style="font-size: 32px">.SE är en oberoende allmännyttig organisation</h1>
 						</div>
 					</div>
 					<div class="span8">
-						<h4>Med CSS-regeln:</h4>
-						<div class="result">
-							<h1 style="font-size: 12px">.SE är en oberoende allmännyttig organisation</h1>
-						</div>
+						<p>Med hjälp av CSS-regeln har vi ändrat textstorleken från standard 32px till 12px. En huvudrubrik (
+						<code>&lt;h1&gt;</code>) är från början 32px, det är ett värde den har med sig, precis som standard-marginalerna vi gick igenom tidigare i boxmodellen.</p>
+						
+						<ol>
+							<li>Regeln för <code>h1</code> kommer matcha alla <code>h1</code>-or i HTML-dokument</li>
+							<li>Textstorleken på alla <code>h1</code>-or minskas till 12 pixlar</li>
+						</ol>
 					</div>
 				</div>
 				
@@ -1029,50 +1056,183 @@ h1 {font-size: 12px;}
 						<img src="pictures/adobepho.png" alt="Skärmdump från Adobe Photoshop">
 						<p>I Adobe Photoshop får du både det hexadecimala värdet <em>(#ffffff)</em> och RGB-värdet <em>(255,255,255)</em>.</p>
 					</div>
-					<div class="span8">
-						...
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Färgexempel</h3>
+						<p>Färgtabell med några namn och värde. För nyanser finns inget namn-värde att använd.</p>
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Färg</th>
+									<th>Namn-värde</th>
+									<th>Hex-värde</th>
+									<th>RGB-värde</th>
+									<th>Exempel</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: black;"></div></td>
+									<td>black</td>
+									<td>#000000</td>
+									<td>rgb(255,0,0)</td>
+									<td><code>h1 {color: black;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: white; border: 1px solid #eee"></div></td>
+									<td>white</td>
+									<td>#ffffff</td>
+									<td>rgb(255,255,255)</td>
+									<td><code>h1 {color: #ffffff;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: red;"></div></td>
+									<td>red</td>
+									<td>#ff0000</td>
+									<td>rgb(255,0,0)</td>
+									<td><code>p {color: red;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: purple;"></div></td>
+									<td>purple</td>
+									<td>#800080</td>
+									<td>rgb(128,0,128)</td>
+									<td><code>li {color: rgb(128,0,128);}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: green;"></div></td>
+									<td>green</td>
+									<td>#008000</td>
+									<td>rgb(0,128,0)</td>
+									<td><code>h2 {color: green;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: lime;"></div></td>
+									<td>lime</td>
+									<td>#00ff00</td>
+									<td>rgb(0,255,0)</td>
+									<td><code>a {color: #00ff00;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: yellow;"></div></td>
+									<td>yellow</td>
+									<td>#ffff00</td>
+									<td>rgb(255,255,0)</td>
+									<td><code>p {color: #ffff00;}</code></td>
+					          </tr>
+								<tr>
+					            <td><div style="margin: 0 auto; width: 20px; height: 20px; background-color: blue;"></div></td>
+									<td>blue</td>
+									<td>#0000ff</td>
+									<td>rgb(0,0,255)</td>
+									<td><code>h1 {color: rgb(0,0,255);}</code></td>
+					          </tr>
+					        </tbody>
+					   </table>
+					</div>
+					<div class="span4">
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: red;}
+							</code></pre>
+						</aside>
+						<div class="result">
+							<h1 style="font-size: 12px; color: red;">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
+					</div>
+					<div class="span4">
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: #ffff00;}
+							</code></pre>
+						</aside>
+						<div class="result">
+							<h1 style="font-size: 12px; color: #ffff00;">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
+					</div>
+					<div class="span4">
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: rgb(128,0,128);}
+							</code></pre>
+						</aside>
+						<div class="result">
+							<h1 style="font-size: 12px; color: #800080;">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
+					</div>
+					<div class="span4">
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: #00ff00;}
+							</code></pre>
+						</aside>
+						<div class="result">
+							<h1 style="font-size: 12px; color: #00ff00;">.SE är en oberoende allmännyttig organisation</h1>
+						</div>
 					</div>
 				</div>
 				
 				<hr>
 				
 				<div class="row">
-					<div class="span8">
-						<h3>Färgexempel</h3>
-						<p></p>
-						
-						<table class="bordered-table">
-					        <thead>
-					          <tr>
-					            <th>Egenskap</th>
-									<th>Värde</th>
-					          </tr>
-					        </thead>
-					        <tbody>
-					         <tr>
-					            <th><code>color:</code></th>
-					            <td>#ffffff</td>
-					          </tr> 
-								<tr>
-					            <th><code>color:</code></th>
-					            <td>rgb(255,255,255);</td>
-					          </tr>
-								<tr>
-					            <th><code>color:</code></th>
-					            <td>white</td>
-					          </tr>
-					        </tbody>
-					   </table>
-						<p>RGB kan också skrivas som procent, 255 = 100%. Alltså är rgb(255,255,255); samma som rgb(100%,100%,100%);</p>
+					<div class="span16">
+						<h3>Fler regler och egenskaper</h3>
+						<p>För att lägga till fler egenskaper till en och samma regel skriver du nästa egenskap direkt efter den första.</p>
 					</div>
 					<div class="span8">
-						<img src="pictures/adobepho.png" alt="Skärmdump från Adobe Photoshop">
-						<p>I Adobe Photoshop får du både det hexadecimala värdet <em>(#ffffff)</em> och RGB-värdet <em>(255,255,255)</em>.</p>
+						<h4>Flera egenskaper i samma regel</h4>
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: #00ff00; font-size: 12px;}
+							</code></pre>
+						</aside>
 					</div>
 					<div class="span8">
-						...
+						<h4>Flera regler som matchar samma element</h4>
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+h1 {color: #00ff00;}
+h1 {font-size: 12px;}
+							</code></pre>
+						</aside>
+					</div>
+					<div class="span16">
+						<p>Det är ingen skillnaden mellan de två exemplen ovan, resultatet blir det samma, men alternativet med en regel och två egenskaper är att föredra då den är kortare och lättare att läsa.</p>
+					</div>
+					<div class="span8">
+						<p>En naturlig process när man skriver CSS-regler är att ersätta värden, alltså "kollidera" egenskaper, där den sistnämnda alltid vinner.</p>
+						<p>Det första exemplet till höger har två regler som matchar samma element, och egenskapen <code>font-size</code> kolliderar. Den sista regeln övervinner den första då den kommer sist.</p>
+						<p>Exempel två har två regler, varav den första har två egenskaper som kolliderar. I den första regeln sätts först font-size till 32 pixlar, sedan till 10, och i sista regeln till 12.</p>
+					</div>
+					<div class="span8">
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+p {font-size: 32px;}
+p {font-size: 12px;}
+							</code></pre>
+						</aside>
+						<aside class="window">
+							<p>CSS exempel</p>
+							<pre><code>
+p {font-size: 32px; font-size: 10px;}
+p {font-size: 12px;}
+							</code></pre>
+						</aside>
 					</div>
 				</div>
+				
+				<hr>
 				
 				
 				
