@@ -8,6 +8,8 @@ h3 {font-size: 22px; padding-top: 10px;}
 p {margin-bottom: 30px;}
 p, blockquote p, li {font-size: 16px; line-height: 1.9em; color: #404040;}
 	p img {float: left; margin: 10px 20px 5px 0;}
+.label {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif}
+del:hover {text-decoration: none;}
 .window code {background-color: transparent;}
 	.window pre code {background-color: transparent;}
 .small p, ul.small li {font-size: 12px;}
