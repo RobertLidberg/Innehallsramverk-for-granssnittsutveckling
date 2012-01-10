@@ -817,6 +817,58 @@
 				
 				<div class="row">
 					<div class="span16">
+						<h3>Strukturera innehåll i kolumner</h3>
+					</div>
+					<div class="span8">
+						<p>Precis som i en tidning kan du sortera innehåll i kolumner (block) som går att placera, det har stora likheter med hur man arbetar med Lego®-klossar. För att skapa ett block används taggen <code>&lt;div&gt;</code>.</p>
+						
+						<aside class="window">
+							<p>Exempel med div</p>
+							<pre><code>
+&lt;div&gt;
+	&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+&lt;/div&gt;
+							</code></pre>
+						</aside>
+						<p>Ovan är ett block med en underrubrik. Till höger är tre <code>div</code>'ar, varav en av div'arna ligger i en annan div. Strukturen är alltså följande;</p>
+						<ul>
+							<li>Div 1</li>
+							<li>Div 2
+								<ul>
+									<li>Div 3</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="span8">
+						<aside class="window">
+							<p>Exempel med div</p>
+							<pre><code>
+&lt;div&gt;
+	&lt;h1&gt;.SE &auml;r en oberoende allm&auml;nnyttig organisation&lt;/h1&gt;
+	&lt;p&gt;&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt; .SE (Stiftelsen f&ouml;r Internetinfrastruktur) &auml;r en oberoende allm&auml;nnyttig organisation som verkar f&ouml;r positiv utveckling av Internet i Sverige.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+	&lt;p&gt;I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi p&aring; olika s&auml;tt Internetutvecklingen i Sverige. Det &auml;r inom denna verksamhet .SE investerar det &ouml;verskott som genereras av registreringsavgifterna f&ouml;r dom&auml;nnamn.&lt;/p&gt;
+
+	&lt;div&gt;
+		&lt;ul&gt;
+			&lt;li&gt;.SE ansvarar f&ouml;r Internets svenska toppdom&auml;n .se&lt;/li&gt;
+			&lt;li&gt;.SE ansvarar f&ouml;r administration och teknisk drift av det nationella dom&auml;nnamnregistret&lt;/li&gt;
+			&lt;li&gt;I enlighet med stiftelsens urkund och stadgar gynnar vi p&aring; olika s&auml;tt Internetutvecklingen i Sverige.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+							</code></pre>
+						</aside>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span16">
 						<h3>Sammanfattning av HTML-kapitlet</h3>
 					</div>
 					<div class="span8">
@@ -1184,7 +1236,7 @@ h1 {color: #00ff00;}
 				
 				<div class="row">
 					<div class="span16">
-						<h3>Fler regler och egenskaper</h3>
+						<h3>Flera regler och egenskaper</h3>
 						<p>För att lägga till fler egenskaper till en och samma regel skriver du nästa egenskap direkt efter den första.</p>
 					</div>
 					<div class="span8">
@@ -1213,26 +1265,137 @@ h1 {font-size: 12px;}
 						<p>En naturlig process när man skriver CSS-regler är att ersätta värden, alltså "kollidera" egenskaper, där den sistnämnda alltid vinner.</p>
 						<p>Det första exemplet till höger har två regler som matchar samma element, och egenskapen <code>font-size</code> kolliderar. Den sista regeln övervinner den första då den kommer sist.</p>
 						<p>Exempel två har två regler, varav den första har två egenskaper som kolliderar. I den första regeln sätts först font-size till 32 pixlar, sedan till 10, och i sista regeln till 12.</p>
+						<p>I exempel tre finns två stycken regler som matchar två olika element, <code>&lt;p&gt;</code> och <code>h3</code>. De har alltså inte med varandra att göra.</p>
 					</div>
 					<div class="span8">
 						<aside class="window">
-							<p>CSS exempel</p>
+							<p>CSS exempel 1</p>
 							<pre><code>
-p {font-size: 32px;}
+p {font-size: 32px; color: red;}
 p {font-size: 12px;}
 							</code></pre>
 						</aside>
 						<aside class="window">
-							<p>CSS exempel</p>
+							<p>CSS exempel 2</p>
 							<pre><code>
 p {font-size: 32px; font-size: 10px;}
 p {font-size: 12px;}
 							</code></pre>
 						</aside>
+						<aside class="window">
+							<p>CSS exempel 3</p>
+							<pre><code>
+h3 {font-size: 22px;}
+p {font-size: 12px;}
+							</code></pre>
+						</aside>
+						<div class="alert-message block-message success small">
+													<p><strong>Tips!</strong> Också i CSS kan du använda indentering (indrag) för att få en bra överblick.</p>
+						</div>
 					</div>
 				</div>
 				
 				<hr>
+				
+				<div class="row">
+					<div class="span16">
+						<h3>Fler CSS-egenskaper</h3>
+						<p>Du känner till <code>font-size</code> och <code>color</code>, här är några fler användbara.</p>
+					</div>
+					<div class="span16">
+						<aside class="window">
+							<p>index.html</p>
+							<pre><code>
+&lt;h1&gt;.SE &auml;r en oberoende allm&auml;nnyttig organisation&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;logo.png&quot; alt=&quot;.SE logotyp&quot;&gt; .SE (Stiftelsen f&ouml;r Internetinfrastruktur) &auml;r en oberoende allm&auml;nnyttig organisation som verkar f&ouml;r positiv utveckling av Internet i Sverige.&lt;/p&gt;
+        
+&lt;h2&gt;Internetutveckling&lt;/h2&gt;
+&lt;p&gt;I enlighet med stiftelsens &lt;a href=&quot;https://www.iis.se/om-se/urkund-och-stadgar&quot;&gt;urkund och stadgar&lt;/a&gt; gynnar vi p&aring; olika s&auml;tt Internetutvecklingen i Sverige. Det &auml;r inom denna verksamhet .SE investerar det &ouml;verskott som genereras av registreringsavgifterna f&ouml;r dom&auml;nnamn.&lt;/p&gt;
+        
+&lt;ul&gt;
+	&lt;li&gt;.SE ansvarar f&ouml;r Internets svenska toppdom&auml;n .se&lt;/li&gt;
+	&lt;li&gt;.SE ansvarar f&ouml;r administration och teknisk drift av det nationella dom&auml;nnamnregistret&lt;/li&gt;
+	&lt;li&gt;I enlighet med stiftelsens urkund och stadgar gynnar vi p&aring; olika s&auml;tt Internetutvecklingen i Sverige.&lt;/li&gt;
+&lt;/ul&gt;
+							</code></pre>
+						</aside>
+					</div>
+					<div class="span6">
+						<aside class="window">
+							<p>style.css</p>
+							<pre><code>
+h1 {border-bottom: 1px solid #cccccc;}
+
+img {
+	border: 1px solid green;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+	}
+
+h2 {color: #843232;}
+
+li {font-weight: bold;}
+							</code></pre>
+						</aside>
+						<div class="alert-message block-message info small">
+							<p><strong>Info!</strong> Vi har gjort radbrytningar i de CSS-regler som har flera egenskaper, det gör koden mer lättläst.</p>
+						</div>
+						<p>I exemplet har vi ändrat huvudrubriken, bilden, underrubriken och punkterna i punktlistan.</p>
+						<p>För dig är <code>border</code>, <code>padding</code>, <code>margin</code> och <code>font-weight</code> nya CSS-egenskaper.</p>
+					</div>
+					<div class="span10">
+						<div class="result">
+							<h1 style="border-bottom: 1px solid #ccc">.SE är en oberoende allmännyttig organisation</h1>
+
+							<p><img src="pictures/logo.png" style="float: none; border: 1px solid green; padding: 10px; margin: 10px 0 10px 0" alt=".SE logotyp"> .SE (Stiftelsen för Internetinfrastruktur) är en oberoende allmännyttig organisation som verkar för positiv utveckling av Internet i Sverige.</p>
+
+							<h2 style="color: #843232">Internetutveckling</h2>
+							<p>I enlighet med stiftelsens <a href="https://www.iis.se/om-se/urkund-och-stadgar">urkund och stadgar</a> gynnar vi på olika sätt Internetutvecklingen i Sverige. Det är inom denna verksamhet .SE investerar det överskott som genereras av registreringsavgifterna för domännamn.</p><br />
+
+							<ul>
+							    <li style="font-weight: bold;">.SE ansvarar för Internets svenska toppdomän .se</li>
+							    <li style="font-weight: bold;">.SE ansvarar för administration och teknisk drift av det nationella domännamnregistret</li>
+							    <li style="font-weight: bold;">I enlighet med stiftelsens urkund och stadgar gynnar vi på olika sätt Internetutvecklingen i Sverige.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="span9">
+						<h3>Margin, Border, Padding samt width och height</h3>
+						<p><code>margin</code>, <code>border</code>, <code>padding</code>, <code>width</code> och <code>height</code> fungerar enligt box-modellen som vi tidigare gått igenom.</p>
+						<ul>
+							<li>Med <code>margin</code> förändrar vi den yttre marginalen kring elementet</li>
+							<li>Anges <code>border</code> förändras kantlinjen</li>
+							<li><code>padding</code> förändrar den "inre" marginalen, innanför border</li>
+							<li><code>width</code> ändrar bredd</li>
+							<li>Och <code>height</code> höjden</li>
+						</ul>
+					</div>
+					<div class="span7">
+						<figure class="boxmodel">
+							<div class="margin">
+							margin <span class="top"><b>15</b></span> <span class="right"><b>15</b></span> <span class="bottom"><b>15</b></span> <span class="left"><b>15</b></span>
+								<div class="border">
+								Border (röd) <span class="top"><b>1</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>1</b></span> <span class="left"><b>1</b></span>
+									<div class="padding">
+									Padding <span class="top"><b>10</b></span> <span class="right"><b>10</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>10</b></span>
+										<div class="width_height">
+										288 x 91
+										</div>
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="span16">
+						<p>Eftersom det finns fyra sidor kan vi ändra alla fyra sidor till att ha olika värden. förutom bredd och höjd. Därför kan vi ange fyra värden för margin, border och padding. Du anger de efter varandra och de kommer läsas in klockvis, alltså första värdet är up (top), det andra höger (right), det tredje ned (bottom) och fjärde vänster (left)</p>
+					</div>
+				</div>
 				
 				
 				
