@@ -17,6 +17,22 @@ del:hover {text-decoration: none;}
 .right {text-align: right;}
 canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 4px 4px;}
 	canvas.bar:hover {background-color: #0069D6;}
+#empty_progress {position: fixed; top: 0; background-color: #ccc; height: 10px; width: 100%; z-index: 9;}
+progress {border: 0; position: fixed; height: 10px; width: 0; top: 0; background-color: #eee !important; z-index: 10; text-align: right;}
+	/* Firefox */
+	progress::-moz-progress-bar {
+	    background: #404040;
+	}
+
+	/* Chrome */
+	progress::-webkit-progress-value {
+	    background: #404040;
+	}
+
+	/* Polyfill */
+	progress[aria-valuenow]:before  {
+	    background: #404040;
+	}
 figure {margin: 10px 0 20px 0;}
 	figcaption {text-align: center; margin-top: 10px;}
 	.boxmodel div {position: relative; padding: 10px 25px 25px 25px; margin: 10px;}
@@ -44,7 +60,7 @@ figure {margin: 10px 0 20px 0;}
 		.result p {margin-bottom: 0;}
 			.result p a {text-decoration: underline;}
 	.result img {margin-top: 10px;}
-	.no-block h1, .no-block h2, .no-block ul, .no-block li, .no-block p {display: inline;}  
+	.no-block h1, .no-block h2, .no-block ul, .no-block li, .no-block p {display: inline;}
 .window {position: relative; margin: 10px 0 20px 0; box-shadow:0 1px 4px rgba(0,0,0,.25); border-radius:4px;}
 .window p {
     border:1px #a8a8a8 solid;

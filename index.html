@@ -7,21 +7,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Pragmatisk gränssnittsutveckling (webbdesign)</title>
+	<title>Pragmatisk, gränssnittsutveckling (webbdesign) på rätt sätt från grunden</title>
 	<meta name="description" content="">
 	<meta name="author" content="Robert Lidberg">
-
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="global.css">
-	<script src="js/highlight.pack.js"></script>
-	<script>
-	  hljs.tabReplace = '    ';
-	  hljs.initHighlightingOnLoad();
-	</script>
 	<script src="js/modernizr-2.0.6.min.js"></script>
 </head>
-
-<body onload="prettyPrint()">
+<body>
+	<div id="empty_progress">
+		<progress class="device"></progress>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="span16">
@@ -33,7 +29,7 @@
 		<div class="row" >
 			<div class="span16">
 				<blockquote>
-					<p>Pragmatisk.se är ett projekt finansierat av Internetstiftelsen. Projektets syfte är att ge ramar till ämnet, och specifikt gymnasiekursen, webbdesign. I ett antal steg kommer du följa en process som är konkret och enkelt utformad från start till slut, successivt lär du dig de delar som krävs för att ta fram en god webbplats från grunden.</p>
+					<p>"Pragmatisk.se är ett projekt finansierat av Internetstiftelsen. Projektets syfte är att ge ramar till ämnet webbdesign, och specifikt gymnasiekursen webbdesign. I ett antal steg kommer du följa en process som är konkret och enkelt utformad från start till slut, successivt lär du dig de delar som krävs för att ta fram en god webbplats från grunden."</p>
 				</blockquote>
 			</div>
 		</div>
@@ -42,17 +38,40 @@
 				<h2>Inledning</h2>
 				<div class="row">
 					<div class="span8">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Projektets specifika syfte är att ge ramar till gymnasiekursen webbdesign, en slags kvalitetssäkring av innehållet som används i kurserna. Det är tänkt som lika mycket stöd för elever som lärare.</p>
+						<p>Namnet Pragmatisk hämtades från filosofin <a href="http://sv.wikipedia.org/wiki/Pragmatisk">pragmatism</a> som i Wikipedia beskrivs så som; "Ett påståendes mening, en idé, metod, teori eller hypotes verifieras enligt pragmatismen i dess konkreta konsekvenser, dess tillämpbarhet, funktion och användbarhet."</p>
 					</div>
 					<div class="span8">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Innhållet är konkret och avskalat för att vara en introduktion till just HTML och CSS, två viktiga grunder för att arbeta med att utveckla webbplatser. Stor vikt har lagts för att förmedla förståelse för hur innehåll och design hänger samman.</p>
+						<p></p>
+						<p>Pragmatisk.se består av två delar, denna sidan med <a href="#table_of_content">steg-för-steg</a> och en referens-wiki med "säkrat" innehåll vilket innebär att funktioner som är föråldrade inte finns med (enligt <a href="http://dev.w3.org/html5/spec/Overview.html">W3C HTML5 utkast</a>).<p>
 					</div>
 				</div>
 			</div>
+			<div class="span10">
+				<h2>Hjälp till</h2>
+				<p>Du är en del av det här projektet, best-practice och nya direktiv från standarder pågår ständigt, har du kunskapen och viljan kan du göra viktiga avtryck.</p>
+				<ol>
+					<li>Fyll på, korrigera och se över innehållet i <a href="wiki">Wikin</a></li>
+					<li>Påverka innehållet i steg-för-steg-delen genom <a href="https://github.com/RobertLidberg/Innehallsramverk-for-granssnittsutveckling">Github</a></li>
+					<li>Nyttja och sprid den här resursen, tipsa i tal, skrift, Facebook och Twitter mm.</li>
+				</ol>
+			</div>
+			<div class="span6">
+				<h2>Författare</h2>
+				<p>Projektet genomfördes av <a href="http://duva.se/">Duva</a> tillsammans med <a href="http://lidkoping.se">Lidköpings kommun</a>, med stöd från <a href="https://www.iis.se/internet-for-alla/internetfonden">Internetfonden</a> och <a href="#footer">sponsorer</a>.</p>
+				<p><a href="mailto:robert.lidberg@duva.se">Robert Lidberg</a>, steg-för-steg<br>
+				<a href="mailto:anders.olofsson@lidkoping.se">Anders Olofsson</a>, Wiki<br>
+				<a href="mailto:rasmus.johansson@duva.se">Rasmus Johansson</a>, Wiki</p>
+				
+			</div>
 		</div>
+		
+		<hr>
+		
 		<div class="row">
 			<div class="span16">
-				<h2>Innehållsförteckning</h2>
+				<h2 id="table_of_content">Innehållsförteckning</h2>
 				<ol>
 					<li>Förberedelser</li>
 					<li>En webbplats två beståndsdelar</li>
@@ -80,6 +99,9 @@
 				</ol>
 			</div>
 		</div>
+		
+		<hr>
+		
 		<div class="row">
 			<div class="span16">
 				<h2>Förberedelser</h2>
@@ -102,12 +124,6 @@
 							<li>Textredigerare som finns med i Mac OS X</li>
 							<li><a href="http://macromates.com/">TextMate</a>, <a href="http://www.peterborgapps.com/smultron/">Smultron</a> eller <a href="http://alternativeto.net/software/coda/">Coda</a></li>
 						</ul>
-				
-						<h4>För *nix</h4>
-						<ul>
-							<li>Första bästa textredigerare</li>
-							<li><a href="http://projects.gnome.org/gedit/">gedit</a>, <a href="http://alternativeto.net/software/vim/">Vim</a></li>
-						</ul>
 					</div>
 					<div class="span4">
 						<h3>Webbläsare</h3>
@@ -119,6 +135,9 @@
 						</ul>
 					</div>
 				</div>
+				
+				<hr>
+				
 				<div class="row">
 					<div class="span16">
 						<h2>En webbplats två beståndsdelar</h2>
@@ -627,7 +646,7 @@
 				
 				<div class="row">
 					<div class="span16">
-						<h3>Så fungerar mått</h3>
+						<h3 id="matt">Så fungerar mått</h3>
 					</div>
 					<div class="span5">
 						<p><img src="pictures/logo.png" alt=".SE logotyp"> Bilden logo.png är 100 pixlar (px) bred och 43 pixlar hög. I tryck används centimeter, millimeter eller tum, också för webbplatser finns fler mått än pixlar; em, pt och procent. Så vad är skillnaden? En enkel regel för textstorlek är 1em = 12pt = 16px = 100%. I exemplen håller vi oss till pixlar.</p>
@@ -675,7 +694,7 @@
 				
 				<div class="row">
 					<div class="span16">
-						<h3>Boxmodellen</h3>
+						<h3 id="boxmodel">Boxmodellen</h3>
 					</div>
 					<div class="span8">
 						<p>Boxmodellen förklarar hur de olika ytorna kring ett blockelement fungerar. Som du säkert sett i ditt exempeldokument finns det marginal kring rubrikerna. För att ta ytterligare ett exempel, <code>&lt;p&gt;</code>, textstycke. Denna består av fyra ytor;</p>
@@ -887,6 +906,7 @@
 							<li>Du kan lägga in bilder med taggen <code>img</code>, du känner också till att den kräver två attribut; <code>src</code> och <code>alt</code></li>
 							<li>Grundläggande mått som pixlar (px)</li>
 							<li>Logiken i boxmodellen och att några taggar redan har margin eller padding från början</li>
+							<li>Grunden med hur <code>div</code>ar fungerar</li>
 						</ul>
 					</div>
 					<div class="span16">
@@ -1381,7 +1401,7 @@ li {font-weight: bold;}
 							<div class="margin">
 							margin <span class="top"><b>15</b></span> <span class="right"><b>15</b></span> <span class="bottom"><b>15</b></span> <span class="left"><b>15</b></span>
 								<div class="border">
-								Border (röd) <span class="top"><b>1</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>1</b></span> <span class="left"><b>1</b></span>
+								Border <span class="top"><b>1</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>1</b></span> <span class="left"><b>1</b></span>
 									<div class="padding">
 									Padding <span class="top"><b>10</b></span> <span class="right"><b>10</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>10</b></span>
 										<div class="width_height">
@@ -1393,25 +1413,251 @@ li {font-weight: bold;}
 						</figure>
 					</div>
 					<div class="span16">
-						<p>Eftersom det finns fyra sidor kan vi ändra alla fyra sidor till att ha olika värden. förutom bredd och höjd. Därför kan vi ange fyra värden för margin, border och padding. Du anger de efter varandra och de kommer läsas in klockvis, alltså första värdet är up (top), det andra höger (right), det tredje ned (bottom) och fjärde vänster (left)</p>
+						<div class="row">
+							<div class="span-one-third">
+								<h4>Ändra flera värden</h4>
+								<p>Eftersom det finns fyra sidor kan vi ändra alla fyra sidor till att ha olika värden. Därför kan vi ange fyra värden för margin, border och padding.</p>
+								<p>Du anger de efter varandra och de kommer läsas in klockvis, alltså första värdet är up <em>(top)</em>, det andra höger <em>(right)</em>, det tredje ned <em>(bottom)</em> och fjärde vänster <em>(left)</em></p>
+								<div class="alert-message block-message success small">
+									<p>En <code>div</code> är alltid osynlig, höjden bestäms utifrån höjden av innehållet. Bredden är 100%, om du inte använder <code>width</code>-egenskapen.</p>
+								</div>
+							</div>
+							<div class="span-one-third">
+								<h4>Margin</h4>
+								<aside class="window">
+									<p>Margin CSS</p>
+									<pre><code>
+div {margin: 10px 20px 10px 30px;}
+									</code></pre>
+								</aside>
+								<figure class="boxmodel">
+									<div class="margin">
+									margin <span class="top"><b>10</b></span> <span class="right"><b>20</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>30</b></span>
+										<div class="border">
+										Border <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+											<div class="padding">
+											Padding <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+												<div class="width_height">
+												0 x 0
+												</div>
+											</div>
+										</div>
+									</div>
+								</figure>
+							</div>
+							<div class="span-one-third">
+								<h4>Border</h4>
+								<aside class="window">
+									<p>Border CSS</p>
+									<pre><code>
+div {border: 1px solid blue;}
+									</code></pre>
+								</aside>
+								<figure class="boxmodel">
+									<div class="margin">
+									margin <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+										<div class="border">
+										Border <span class="top"><b>1</b></span> <span class="right"><b>1</b></span> <span class="bottom"><b>1</b></span> <span class="left"><b>1</b></span>
+											<div class="padding">
+											Padding <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+												<div class="width_height">
+												0 x 0
+												</div>
+											</div>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="span16">
+						<div class="row">
+							<div class="span-one-third">
+								<h4>Padding</h4>
+								<aside class="window">
+									<p>Padding CSS</p>
+									<pre><code>
+div {padding: 15px 20px 10px 10px;}
+									</code></pre>
+								</aside>
+								<figure class="boxmodel">
+									<div class="margin">
+									margin <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+										<div class="border">
+										Border <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+											<div class="padding">
+											Padding <span class="top"><b>15</b></span> <span class="right"><b>20</b></span> <span class="bottom"><b>10</b></span> <span class="left"><b>10</b></span>
+												<div class="width_height">
+												0 x 0
+												</div>
+											</div>
+										</div>
+									</div>
+								</figure>
+							</div>
+							<div class="span-one-third">
+								<h4>Width</h4>
+								<aside class="window">
+									<p>Margin CSS</p>
+									<pre><code>
+div {width: 200px;}
+									</code></pre>
+								</aside>
+								<figure class="boxmodel">
+									<div class="margin">
+									margin <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+										<div class="border">
+										Border <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+											<div class="padding">
+											Padding <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+												<div class="width_height">
+												<b>200</b> x 0
+												</div>
+											</div>
+										</div>
+									</div>
+								</figure>
+							</div>
+							<div class="span-one-third">
+								<h4>Height</h4>
+								<aside class="window">
+									<p>Border CSS</p>
+									<pre><code>
+div {height: 90px;}
+									</code></pre>
+								</aside>
+								<figure class="boxmodel">
+									<div class="margin">
+									margin <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+										<div class="border">
+										Border <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+											<div class="padding">
+											Padding <span class="top">0</span> <span class="right">0</span> <span class="bottom">0</span> <span class="left">0</span>
+												<div class="width_height">
+												0 x <b>90</b>
+												</div>
+											</div>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
 					</div>
 				</div>
 				
+				<hr>
 				
+				<div class="row">
+					<div class="span16">
+						<h3>Sammanfattning av CSS-kapitlet</h3>
+						<p></p>
+					</div>
+					<div class="span8">
+						<ul>
+							<li>CSS är språket för att designa innehåll</li>
+							<li>Hur CSS-regler är uppbyggda</li>
+							<li>Koppla ihop HTML-dokumentet och CSS-filen med HTML <code>link</code>-taggen</li>
+							<li>Matcha CSS regel med rätt element</li>
+						</ul>
+					</div>
+					<div class="span8">
+						<ul>
+							<li>Färgsättning med bland annat hex-värde (#ffffff)</li>
+							<li>Hur det fungerar när CSS regler "tar ut" varandra</li>
+							<li>Vi gick igenom egenskaper som <code>font-size</code> och <code>color</code></li>
+							<li>Återgick till boxmodellen och använde <code>margin</code>, <code>border</code>, <code>padding</code> mm.</li>
+						</ul>
+					</div>
+					<div class="span16">
+						<table class="bordered-table">
+					        <thead>
+					          <tr>
+					            <th>Egenskap</th>
+									<th>Värde-exempel</th>
+									<th>Förklaring</th>
+									<th>Exempel</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					         <tr>
+					            <th><code>font-size</code></th>
+					            <th>12px</th>
+									<th>Textstorlek</th>
+									<th><code>h1 {font-size: 12px}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>color</code></th>
+					            <th>#ffffff</th>
+									<th>Textfärg</th>
+									<th><code>p {color: #000000}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>border-bottom</code></th>
+					            <th>1px solid #000000</th>
+									<th>Kantlinje i nederkant</th>
+									<th><code>img {border-bottom: 1px solid #000000}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>border</code></th>
+					            <th>1px 2px 1px 2px</th>
+									<th>Kantlinje runt hela elementet</th>
+									<th><code>h2 {border: 1px 2px 1px 2px;}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>padding</code></th>
+					            <th>20px 10px 20px 15px</th>
+									<th>Marginal innanför kantlinjen</th>
+									<th><code>h1 {padding: 12px}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>margin</code></th>
+					            <th>40px</th>
+									<th>Marginal utanför kantlinjen</th>
+									<th><code>h1 {margin: 20px}</code></th>
+					          </tr>
+								<tr>
+					            <th><code>font-weight</code></th>
+					            <th>bold/normal</th>
+									<th>Gör text fetstilt eller tunnare</th>
+									<th><code>p {font-weight: bold}</code></th>
+					          </tr>
+					        </tbody>
+					   </table>
+					</div>
+				</div>
 				
-				
-				
+				<hr>
 				
 				
 			</div>
 		</div>
-		<footer>
+		<footer id="footer">
 			<p>Erkännande-IckeKommersiell-DelaLika 2.5 Sverige.</p>
 		</footer>
 	</div>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
 	<script type="text/javascript" src="http://use.typekit.com/myi0dcx.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/misc.js"></script>
+	<script>
+	  hljs.tabReplace = '    ';
+	  hljs.initHighlightingOnLoad();
+	</script>
+	<script>
+		
+		$(document).ready(function(){
+		   $('.device').css({'width':62+$(document).width()*($(window).scrollTop()/$(document).height())});
+			$(window).scroll(function(){
+				var magicnumber = $(window).scrollTop()/($(document).height());
+				
+				if ((60+($(document).width()*magicnumber)) < $(document).width()) {
+			   	$('.device').css({'width':62+($(document).width()*magicnumber)});
+			  	}
+			});
+		});
+		
+	</script>
 	<script>
 		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
