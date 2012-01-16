@@ -17,7 +17,7 @@ del:hover {text-decoration: none;}
 .right {text-align: right;}
 canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 4px 4px;}
 	canvas.bar:hover {background-color: #0069D6;}
-#empty_progress {position: fixed; top: 0; background-color: #fff; height: 10px; width: 100%; z-index: 9; cursor:pointer; overflow: hidden }
+#empty_progress {position: fixed; top: 0; background-image: url('img/gradient.png'); background-repeat: repeat-x; height: 53px; width: 100%; z-index: 9; cursor:pointer; overflow: hidden }
 #bookmarks {
 	display:block;
 	z-index: 20;
