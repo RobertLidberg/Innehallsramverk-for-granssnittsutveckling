@@ -11,13 +11,33 @@ p, blockquote p, li {font-size: 16px; line-height: 1.9em; color: #404040;}
 table pre {padding: 0; margin: 0; border: 0;}
 .label {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif}
 del:hover {text-decoration: none;}
-.window code {background-color: transparent;}
+.window code {background-color: transparent; line-height: 1.25em;}
 	.window pre code {background-color: transparent;}
 .small p, ul.small li {font-size: 12px;}
 .right {text-align: right;}
 canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 4px 4px;}
 	canvas.bar:hover {background-color: #0069D6;}
-#empty_progress {position: fixed; top: 0; background-color: #ccc; height: 10px; width: 100%; z-index: 9;}
+#empty_progress {position: fixed; top: 0; background-color: #ccc; height: 10px; width: 100%; z-index: 9; cursor:pointer; overflow: hidden }
+#empty_progress:hover { height: 50px }
+#bookmarks {
+	display:block;
+	z-index: 20;
+	position: absolute;
+	}
+#bookmarks ul {
+	margin: 0;
+	padding: 0
+	}
+#bookmarks ul li {
+	width: 500px;
+	position: absolute;
+	margin-left: -250px;
+	list-style-type: none;
+	background: url(img/bookmark.png) center 2px no-repeat
+	}
+#bookmarks ul li div {min-height: 10px;}
+#bookmarks ul li a {display: none; text-align: center; margin-top: 10px;}
+#bookmarks ul li:hover a {display: block;}
 progress {border: 0; position: fixed; height: 10px; width: 0; top: 0; background-color: #eee !important; z-index: 10; text-align: right;}
 	/* Firefox */
 	progress::-moz-progress-bar {
