@@ -17,8 +17,7 @@ del:hover {text-decoration: none;}
 .right {text-align: right;}
 canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 4px 4px;}
 	canvas.bar:hover {background-color: #0069D6;}
-#empty_progress {position: fixed; top: 0; background-color: #ccc; height: 10px; width: 100%; z-index: 9; cursor:pointer; overflow: hidden }
-#empty_progress:hover { height: 50px }
+#empty_progress {position: fixed; top: 0; background-color: #fff; height: 10px; width: 100%; z-index: 9; cursor:pointer; overflow: hidden }
 #bookmarks {
 	display:block;
 	z-index: 20;
@@ -30,28 +29,28 @@ canvas.bar {background-color: #ccc; margin: 8px 0 8px 0; border-radius: 4px 4px 
 	}
 #bookmarks ul li {
 	width: 500px;
+	min-height: 10px;
 	position: absolute;
 	margin-left: -250px;
 	list-style-type: none;
 	background: url(img/bookmark.png) center 2px no-repeat
 	}
-#bookmarks ul li div {min-height: 10px;}
-#bookmarks ul li a {display: none; text-align: center; margin-top: 10px;}
-#bookmarks ul li:hover a {display: block;}
-progress {border: 0; position: fixed; height: 10px; width: 0; top: 0; background-color: #eee !important; z-index: 10; text-align: right;}
+#bookmarks ul li a {display: none; text-align: left; margin-top: 10px; cursor: pointer;}
+/* #bookmarks ul li:hover a {display: block;} */
+progress {border: 0; position: fixed; height: 2px; width: 0; top: 4px; background-color: #969696 !important; z-index: 10; text-align: right;}
 	/* Firefox */
 	progress::-moz-progress-bar {
-	    background: #404040;
+	    background: #969696;
 	}
 
 	/* Chrome */
 	progress::-webkit-progress-value {
-	    background: #404040;
+	    background: #969696;
 	}
 
 	/* Polyfill */
 	progress[aria-valuenow]:before  {
-	    background: #404040;
+	    background: #969696;
 	}
 figure {margin: 10px 0 20px 0;}
 	figcaption {text-align: center; margin-top: 10px;}
